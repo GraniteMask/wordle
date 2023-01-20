@@ -1,0 +1,32 @@
+.boxesWrapper{
+    display: flex !important;
+    justify-content: space-between !important;
+    padding-top: 0.3rem !important;
+}
+
+.boxesBasicDesign{
+    width: 48px;
+    height: 48px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.defaultBoxes{
+    border: 2px solid #3a3a3c;
+}
+
+.greenBoxes{
+    background-color: #538d4e;
+    border: none;
+}
+
+.yellowBoxes{
+    background-color: #b59f3b;
+    border: none;
+}
+
+.absentBoxes{
+    background-color: #3a3a3c;
+    border: none;
+}

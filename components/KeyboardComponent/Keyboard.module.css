@@ -1,0 +1,11 @@
+.keyboardWrapper{
+    margin-top: 3rem;
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .keyboardWrapper{
+        margin-left: 5rem;
+        margin-right: 5rem;;
+    }
+}

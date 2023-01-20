@@ -1,0 +1,9 @@
+.wrapper{
+    max-width: 16rem;
+    max-height: 30rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-Top: 5rem;
+}
+
