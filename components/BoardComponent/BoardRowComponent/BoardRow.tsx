@@ -3,7 +3,7 @@ import React, { useContext, useEffect, useRef, useState } from 'react'
 import { COLUMNS } from "../../../constants/GridConstants"
 import styles from "./BoardRow.module.css";
 
-const CORRECT_WORD = ['A','D','I','E','U']
+const CORRECT_WORD = ['F','U','Z','Z','Y']
 
 interface Row {
     rowIdx: number,
@@ -29,15 +29,16 @@ export default function BoardRow({ rowIdx, onScreenInput } : Row) : JSX.Element 
     }, [attempts])
 
     function compare(currentWord: Array<String>, CORRECT_WORD: Array<String>){
+        let CORRECT_WORD_TEMP = CORRECT_WORD
         for(let i = 0; i < currentWord.length; i++){
             let temp = letterStatus
-            if(currentWord[i] === CORRECT_WORD[i]){
+            if(currentWord[i] === CORRECT_WORD_TEMP[i]){
                 temp[i] = "green"
                 setLetterStatus(temp)
-            }else if(CORRECT_WORD.includes(currentWord[i])){
+            }else if(CORRECT_WORD_TEMP.includes(currentWord[i])){
                 temp[i] = "yellow"
                 setLetterStatus(temp)
-            }else if(!CORRECT_WORD.includes(currentWord[i])){
+            }else if(!CORRECT_WORD_TEMP.includes(currentWord[i])){
                 temp[i] = "absent"
                 setLetterStatus(temp)
             }
