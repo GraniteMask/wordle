@@ -10,7 +10,12 @@
     color: white;
     text-transform: uppercase;
     text-align: center;
+    caret-color: transparent;
 }
+
+/* .boxesBasicDesign:focus{
+    outline: none;
+} */
 
 .defaultBoxes{
     border: 2px solid #3a3a3c;
